@@ -1,0 +1,32 @@
+{
+  "name": "deep-clone",
+  "version": "1.0.0",
+  "description": "Utility to deep clone javascript objects",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "npm run build && node ./node_modules/.bin/jest",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gauravbehere/deep-clone.git"
+  },
+  "author": "Gaurav Behere(gaurav.techgeek@gmail.com)",
+  "keywords": "deep-clone, deep clone, clone utility js, javascript deep clone, clone objects, clone arrays",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gauravbehere/deep-clone/issues"
+  },
+  "homepage": "https://github.com/gauravbehere/deep-clone#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "jest": "^26.1.0",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4"
+  }
+}
