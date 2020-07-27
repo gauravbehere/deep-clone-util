@@ -1,22 +1,43 @@
 # deep-clone
 Utility to deep clone javascript objects
 
+[![npm version](https://badge.fury.io/js/deep-clone-util.svg)](https://badge.fury.io/js/deep-clone-util)
+
  ## Clone - JS utility to deep clone an object
  ### Supports cloning of:
- - 1. Elementary values
- - 2. Array, Objects (nesting upto any level)
- - 3. Functions
- - 4. Promises
- - 5. Dates
- - 6. Regular expressions
- - 7. Maps & Sets
+ -  Elementary values
+ -  Array, Objects (nesting upto any level)
+ -  Functions
+ -  Promises
+ -  Dates
+ -  Regular expressions
+ -  Maps & Sets
 
  ### Todo
- - 1. Support circular references
- - 2. Suppprt more JS types
+ -  Support circular references
+ -  Suppprt more JS types
 
- ### Usage
- 
+ ### Installation
+ ``` npm i deep-clone-util ```
+
+### Examples
+```
+const clone = require('deep-clone-util');
+const obj = {
+ a: 1,
+ b: "string",
+ c: function(a) {console.log(a)},
+ d: [1,2,3],
+ f: {
+  g: 1
+ }
+}
+
+const clonedObj = clone(obj)
+obj.f.g = 10
+console.log(clonedObj.f.g) // Prints 1
+```
+
 
 ### Contributions
   - Author: Gaurav Behere
