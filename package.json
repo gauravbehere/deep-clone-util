@@ -1,6 +1,6 @@
 {
   "name": "deep-clone-util",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Utility to deep clone javascript objects",
   "main": "dist/main.js",
   "scripts": {

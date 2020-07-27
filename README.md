@@ -1,4 +1,4 @@
-# deep-clone
+# deep-clone-util
 Utility to deep clone javascript objects
 
 [![npm version](https://badge.fury.io/js/deep-clone-util.svg)](https://badge.fury.io/js/deep-clone-util)
