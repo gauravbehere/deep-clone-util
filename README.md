@@ -2,6 +2,7 @@
 Utility to deep clone javascript objects
 
 [![npm version](https://badge.fury.io/js/deep-clone-util.svg)](https://badge.fury.io/js/deep-clone-util)
+![Node.js CI](https://github.com/gauravbehere/deep-clone-util/workflows/Node.js%20CI/badge.svg)
 
  ## Clone - JS utility to deep clone an object
  With deep cloning becoming a regular practice & a required thing for supporting immutability, deep-clone-util provides a way just to do that.
