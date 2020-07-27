@@ -4,3 +4,4 @@ src
 webpack.config.js
 readme.md
 coverage
+.github
