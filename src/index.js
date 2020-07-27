@@ -12,7 +12,23 @@ const getRegExPatterns = (source) => {
   return patterns
 }
 
+/**
+ * Clone - JS utility to deep clone an object
+ * Supports cloning of:
+ * 1. Elementary values
+ * 2. Array, Objects (nesting upto any level)
+ * 3. Functions
+ * 4. Promises
+ * 5. Dates
+ * 6. Regular expressions
+ * 7. Maps & Sets
+ * 
+ * @param {*} obj, object to clone
+ * @module clone
+ * @exports clone
+ */
 const clone = (obj) => {
+  'use strict'
   let clonedObj = {}
   // Takes care of null, undefined
   if (!obj) return obj

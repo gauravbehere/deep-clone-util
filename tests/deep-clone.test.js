@@ -1,4 +1,4 @@
-const clone = require('../dist/main')
+const clone = require('../src/index')
 
 describe('Test suite for deep clone util', () => {
   const testObj = {
@@ -26,7 +26,7 @@ describe('Test suite for deep clone util', () => {
     r: new Set([1, 2, 3, 4]),
     s: new Map([[1, 2], [{ a: 1 }, { c: 2 }]]),
     t: new Promise(() => { }),
-    u: new RegExp( "http://www.google.com", "i" ),
+    u: new RegExp( "http://www.google.com", "igm" ),
     n: (a) => { return a }
   }
 
@@ -79,5 +79,10 @@ describe('Test suite for deep clone util', () => {
   it('Should clone functions in the cloned object', () => {
     const clonedObj = clone(testObj)
     expect(clonedObj.n(123)).toBe(testObj.n(123))
+  })
+
+  it('Should clone promises in the cloned object', () => {
+    const clonedObj = clone(testObj)
+    expect(clonedObj.t.constructor.name.toString()).toBe('Promise')
   })
 })

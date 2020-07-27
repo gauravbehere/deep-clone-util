@@ -1,10 +1,10 @@
 {
-  "name": "deep-clone",
-  "version": "1.0.0",
+  "name": "deep-clone-util",
+  "version": "4.0.0",
   "description": "Utility to deep clone javascript objects",
   "main": "dist/main.js",
   "scripts": {
-    "test": "npm run build && node ./node_modules/.bin/jest",
+    "test": "npm run build && node ./node_modules/.bin/jest --coverage",
     "build": "webpack"
   },
   "repository": {
@@ -24,9 +24,7 @@
     "babel-loader": "^8.1.0",
     "jest": "^26.1.0",
     "webpack": "^4.44.0",
-    "webpack-cli": "^3.3.12"
-  },
-  "dependencies": {
+    "webpack-cli": "^3.3.12",
     "@babel/plugin-transform-modules-commonjs": "^7.10.4"
   }
 }

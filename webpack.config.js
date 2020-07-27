@@ -17,7 +17,8 @@ module.exports = {
   entry: './src/index.js',
   mode: 'production',
   output: {
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
+    globalObject: 'this'
   },
   module: {
       rules
