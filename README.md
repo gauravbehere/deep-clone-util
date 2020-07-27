@@ -4,6 +4,10 @@ Utility to deep clone javascript objects
 [![npm version](https://badge.fury.io/js/deep-clone-util.svg)](https://badge.fury.io/js/deep-clone-util)
 
  ## Clone - JS utility to deep clone an object
+ With deep cloning becoming a regular practice & a required thing for supporting immutability, deep-clone-util provides a way just to do that.
+ - No dependeny on any library
+ - 2kB of unzipped bundle size
+ 
  ### Supports cloning of:
  -  Elementary values
  -  Array, Objects (nesting upto any level)
@@ -15,7 +19,7 @@ Utility to deep clone javascript objects
 
  ### Todo
  -  Support circular references
- -  Suppprt more JS types
+ -  Suppprt more object types
 
  ### Installation
  ``` npm i deep-clone-util ```
@@ -41,4 +45,4 @@ console.log(obj.f.g) // Prints 1
 
 ### Contributions
   - Author: Gaurav Behere
-Please raise a PR, if you see some improvement possible.
+- Please raise a PR, if you see some improvement possible.
