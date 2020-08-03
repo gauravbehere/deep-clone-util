@@ -39,7 +39,7 @@ const obj = {
 }
 
 const clonedObj = clone(obj)
-obj.f.g = 10
+clonedObj.f.g = 10
 console.log(obj.f.g) // Prints 1
 ```
 
